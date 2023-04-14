@@ -15,5 +15,6 @@ export * from "./components/RepoCard";
 export * from "./components/Sidebar";
 export * from "./components/UserCard";
 export * from "./components/UserDetails";
+export * from "./components/Header";
 
 export * from "./hooks";

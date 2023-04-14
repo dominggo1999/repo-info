@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { ThemeProvider } from "next-themes";
 import { Main } from "layouts";
+import { CommandPaletteProvider } from "providers";
 import { SSRProvider as ReactAriaSsrProvider } from "@react-aria/ssr";
 
 const MyApp: AppType<{
@@ -25,9 +26,11 @@ const MyApp: AppType<{
           enableSystem={false}
         >
           <ReactAriaSsrProvider>
-            <Main>
-              <Component {...pageProps} />
-            </Main>
+            <CommandPaletteProvider>
+              <Main>
+                <Component {...pageProps} />
+              </Main>
+            </CommandPaletteProvider>
           </ReactAriaSsrProvider>
         </ThemeProvider>
       </Hydrate>
