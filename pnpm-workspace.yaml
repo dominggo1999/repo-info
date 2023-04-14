@@ -1,0 +1,7 @@
+packages:
+  - apps/nextjs
+  - apps/vue
+  - packages/config/*
+  - packages/ui-react
+  - packages/ui-vue
+  - packages/types
