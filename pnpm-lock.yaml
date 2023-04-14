@@ -35,6 +35,7 @@ importers:
 
   apps/nextjs:
     specifiers:
+      '@acme/services': '*'
       '@acme/tailwind-config': '*'
       '@acme/types': '*'
       '@acme/ui-react': '*'
@@ -68,6 +69,7 @@ importers:
       zod: ^3.20.0
       zustand: ^4.3.3
     dependencies:
+      '@acme/services': link:../../packages/services
       '@acme/tailwind-config': link:../../packages/config/tailwind
       '@acme/types': link:../../packages/types
       '@acme/ui-react': link:../../packages/ui-react

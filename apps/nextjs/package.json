@@ -15,6 +15,7 @@
     "generate-pwa-asset": "node scripts/pwa-asset-generator.mjs"
   },
   "dependencies": {
+    "@acme/services": "*",
     "@acme/tailwind-config": "*",
     "@acme/types": "*",
     "@acme/ui-react": "*",
