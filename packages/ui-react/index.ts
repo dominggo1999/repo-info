@@ -9,5 +9,3 @@ export * from "./components/Skeleton";
 export * from "./components/EmptyState";
 
 export * from "./hooks";
-
-console.log("Q");

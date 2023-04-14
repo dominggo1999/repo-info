@@ -5,3 +5,4 @@ packages:
   - packages/ui-react
   - packages/ui-vue
   - packages/types
+  - packages/services
