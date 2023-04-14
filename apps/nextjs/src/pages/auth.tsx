@@ -3,6 +3,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { TextField, Button } from "@acme/ui-react";
 import { login, CORRECT_EMAIL, CORRECT_PASSWORD } from "@acme/services";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 interface IFormInput {
   email: string;
@@ -35,6 +36,9 @@ const Auth = () => {
 
   return (
     <>
+      <Head>
+        <title>Auth</title>
+      </Head>
       <form
         className="flex w-full flex-col gap-y-4 md:w-1/2"
         onSubmit={handleSubmit(onSubmit)}
