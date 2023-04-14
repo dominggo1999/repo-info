@@ -6,7 +6,7 @@ export interface BrandProps extends React.HTMLAttributes<HTMLSpanElement> {
 }
 
 const Brand: React.FC<BrandProps> = ({
-  title = "CekOngkir",
+  title = "RepoInfo",
   className,
   ...restProps
 }) => {
