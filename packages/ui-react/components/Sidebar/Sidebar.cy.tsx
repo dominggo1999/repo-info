@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 describe("Sidebar", () => {
   it("renders the correct brand", () => {
     cy.mount(<Sidebar open setOpen={() => {}} />);
-    cy.contains("RepoExplorer");
+    cy.contains("RepoInfo");
   });
 
   it("calls the setOpen function when closed", () => {
