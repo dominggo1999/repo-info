@@ -2,6 +2,8 @@
 
 export const CORRECT_EMAIL = "repoinfo@repoinfo.com";
 export const CORRECT_PASSWORD = "Fassword123";
+export const PASSWORD_ERROR_MESSAGE = "Ooops, wrong password!";
+export const EMAIL_ERROR_MESSAGE = "There is no user found with this email";
 
 const isClient = typeof window !== "undefined";
 
