@@ -73,7 +73,7 @@ const CommandPaletteProvider: React.FC<CommandPaletteProviderProps> = ({
       name: "Source Code",
       keywords: "Source Code",
       perform: () =>
-        openLinkInNewTab("https://github.com/dominggo1999/repo-finder"),
+        openLinkInNewTab("https://github.com/dominggo1999/repo-info"),
     },
     {
       id: "portfolio",
