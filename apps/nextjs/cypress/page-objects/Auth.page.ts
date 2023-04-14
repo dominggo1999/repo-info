@@ -20,7 +20,7 @@ class AuthPage {
     this.elements.submitButton().click();
 
     // Wait to load
-    cy.wait(1600);
+    cy.wait(2000);
   }
 }
 

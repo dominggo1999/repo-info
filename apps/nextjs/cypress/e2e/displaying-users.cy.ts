@@ -4,7 +4,6 @@ describe("Displaying users", () => {
   beforeEach(() => {
     AuthPage.visit();
     AuthPage.login();
-    HomePage.visit();
   });
 
   it("Should display an input field and a button to search for a user using their username", () => {
