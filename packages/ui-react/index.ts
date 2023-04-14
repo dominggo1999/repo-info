@@ -10,5 +10,6 @@ export * from "./components/EmptyState";
 export * from "./components/Collapsible";
 export * from "./components/Combobox";
 export * from "./components/Kbd";
+export * from "./components/NumberIcon";
 
 export * from "./hooks";
