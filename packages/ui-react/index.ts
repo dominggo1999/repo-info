@@ -7,5 +7,7 @@ export * from "./components/PageMessage";
 export * from "./components/Loading";
 export * from "./components/Skeleton";
 export * from "./components/EmptyState";
+export * from "./components/Collapsible";
+export * from "./components/Combobox";
 
 export * from "./hooks";
