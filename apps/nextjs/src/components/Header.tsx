@@ -14,6 +14,7 @@ import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import clsx from "clsx";
 import { useKBar } from "kbar";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 
 const Header: React.FC = () => {
   const [mounted, setMounted] = useState(false);
@@ -22,6 +23,7 @@ const Header: React.FC = () => {
   const { isOpen: isSidebarOpen, setIsOpen } = useSidebarStore();
   const { query } = useKBar();
   const isDark = theme === "dark";
+  const { pathname } = useRouter();
 
   const toggleTheme = () => setTheme(isDark ? "light" : "dark");
 
@@ -37,6 +39,7 @@ const Header: React.FC = () => {
           data-cy="header-brand"
           className="hidden md:inline-block"
           href="/"
+          disabled={pathname === "/auth"}
         >
           <Brand />
         </Link>

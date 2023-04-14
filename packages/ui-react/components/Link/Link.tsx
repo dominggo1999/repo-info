@@ -8,6 +8,7 @@ export interface LinkProps extends React.HTMLAttributes<HTMLAnchorElement> {
   external?: boolean;
   className?: string;
   onClick?: () => void;
+  disabled?: boolean;
 }
 
 const Link: React.FC<LinkProps> = forwardRef<HTMLAnchorElement, LinkProps>(
