@@ -4,7 +4,7 @@ import { useUserDetails } from "hooks";
 import { Skeleton, Loading, UserDetails } from "@acme/ui-react";
 import { useHandleErrorRedirect } from "hooks";
 
-const Profile = () => {
+const Profile: React.FC = () => {
   const { query } = useRouter();
 
   const username = query.username as string;

@@ -6,7 +6,7 @@ import type { RepoSortOption } from "hooks";
 
 const sortTypes: RepoSortOption[] = ["name", "updated"];
 
-const RepoListAll = () => {
+const RepoListAll: React.FC = () => {
   const { query } = useRouter();
   const [sort, setSort] = useState<RepoSortOption>("updated");
 

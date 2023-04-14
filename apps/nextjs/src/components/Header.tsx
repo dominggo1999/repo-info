@@ -15,7 +15,7 @@ import clsx from "clsx";
 import { useKBar } from "kbar";
 import { useTheme } from "next-themes";
 
-const Header = () => {
+const Header: React.FC = () => {
   const [mounted, setMounted] = useState(false);
   const { fullscreen, toggle: toggleFullScreen } = useFullscreen();
   const { theme, setTheme } = useTheme();
