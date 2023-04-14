@@ -9,3 +9,31 @@ html {
 body {
   @apply min-h-screen bg-white font-primary dark:bg-background-500 dark:text-white;
 }
+
+/* Kbar */
+.kbar-container {
+  @apply z-max;
+}
+
+.kbar-container > div > div,
+.kbar-container > div > div input {
+  @apply w-[80vw] sm:w-[500px];
+}
+
+.kbar-container > div > div input {
+  @apply rounded-lg dark:bg-background-500 dark:text-white;
+}
+
+.kbar-container > div > div > div {
+  @apply overflow-hidden rounded-lg shadow-lg;
+}
+
+/* Options container */
+.kbar-container #kbar-listbox {
+  @apply bg-primary-500;
+}
+
+/* Hover option */
+.kbar-container #kbar-listbox > [aria-selected="true"] > div {
+  @apply !bg-background-200;
+}

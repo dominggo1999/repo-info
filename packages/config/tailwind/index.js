@@ -85,6 +85,9 @@ module.exports = {
       animation: {
         "rotate-360": "rotate-360 1s linear infinite",
       },
+      zIndex: {
+        max: 2147483647,
+      },
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],
