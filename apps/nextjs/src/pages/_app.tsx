@@ -11,6 +11,8 @@ import { ThemeProvider } from "next-themes";
 import { Main } from "layouts";
 import { CommandPaletteProvider } from "providers";
 import { SSRProvider as ReactAriaSsrProvider } from "@react-aria/ssr";
+import Head from "next/head";
+import { PwaMeta } from "components";
 
 const MyApp: AppType<{
   dehydratedState: unknown;
@@ -20,6 +22,10 @@ const MyApp: AppType<{
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
+        <Head>
+          <link rel="manifest" href="/manifest.json" />
+          <PwaMeta />
+        </Head>
         <ThemeProvider
           defaultTheme="dark"
           attribute="class"
