@@ -5,3 +5,4 @@ export { default as RepoListPreview } from "./RepoListPreview";
 export { default as Profile } from "./Profile";
 export { default as RepoListAll } from "./RepoListAll";
 export { default as PwaMeta } from "./PwaMeta";
+export { default as ProtectedRoute } from "./ProtectedRoute";

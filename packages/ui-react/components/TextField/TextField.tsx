@@ -4,7 +4,7 @@ import type { AriaTextFieldProps } from "@react-aria/textfield";
 import { useObjectRef } from "@react-aria/utils";
 import clsx from "clsx";
 
-type TextFieldProps = AriaTextFieldProps & {
+export type TextFieldProps = AriaTextFieldProps & {
   label?: string;
   className?: string;
 };

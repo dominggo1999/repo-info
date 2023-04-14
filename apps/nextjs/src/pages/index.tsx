@@ -7,7 +7,7 @@ import {
   useScrollToTop,
 } from "@acme/ui-react";
 import { useHandleErrorRedirect, useUsersByUsername } from "hooks";
-import { UserAccordion } from "components";
+import { ProtectedRoute, UserAccordion } from "components";
 import Head from "next/head";
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
   useHandleErrorRedirect(error?.response?.status);
 
   return (
-    <>
+    <ProtectedRoute>
       <Head>
         <title>RepoExplorer</title>
       </Head>
@@ -75,7 +75,7 @@ const Home = () => {
           </div>
         )}
       </div>
-    </>
+    </ProtectedRoute>
   );
 };
 
