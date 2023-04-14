@@ -1,7 +1,9 @@
-import { HomePage } from "page-objects";
+import { HomePage, AuthPage } from "page-objects";
 
 describe("Displaying users", () => {
   beforeEach(() => {
+    AuthPage.visit();
+    AuthPage.login();
     HomePage.visit();
   });
 

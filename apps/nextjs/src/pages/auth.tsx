@@ -40,6 +40,7 @@ const Auth = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <TextField
+          data-cy="email"
           label="Email"
           {...register("email", {
             required: true,
@@ -48,6 +49,7 @@ const Auth = () => {
           type="email"
         />
         <TextField
+          data-cy="password"
           label="Password"
           {...register("password", {
             required: true,
@@ -57,12 +59,12 @@ const Auth = () => {
         />
 
         {errorMessage && (
-          <div className="text-danger">
+          <div data-cy="auth-error-message" className="text-danger">
             <p>{errorMessage}</p>
           </div>
         )}
 
-        <Button className="self-start" type="submit">
+        <Button data-cy="submit-button" className="self-start" type="submit">
           Login
         </Button>
       </form>
