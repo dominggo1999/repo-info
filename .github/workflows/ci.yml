@@ -54,6 +54,8 @@ jobs:
           command: pnpm --dir ./apps/nextjs/ cy:e2e
           start: pnpm --dir ./apps/nextjs/ dev
           wait-on: "http://localhost:3000"
+        env:
+          NEXT_PUBLIC_GITHUB_ACCESS_TOKEN: ${{ secrets.NEXT_PUBLIC_GITHUB_ACCESS_TOKEN }}
 
       - name: Run job ${{ matrix.job }}
         if: matrix.job == 'ui-react-components-test'
