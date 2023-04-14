@@ -28,13 +28,13 @@ export const login = ({
 
   if (email !== CORRECT_EMAIL) {
     return {
-      error: "There is no user found with this email",
+      error: EMAIL_ERROR_MESSAGE,
     };
   }
 
   if (password !== CORRECT_PASSWORD) {
     return {
-      error: "Ooops, wrong password!",
+      error: PASSWORD_ERROR_MESSAGE,
     };
   }
 };
