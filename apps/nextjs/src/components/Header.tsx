@@ -38,8 +38,7 @@ const Header: React.FC = () => {
         <Link
           data-cy="header-brand"
           className="hidden md:inline-block"
-          href="/"
-          disabled={pathname === "/auth"}
+          href={pathname === "/auth" ? "/auth" : "/"}
         >
           <Brand />
         </Link>
