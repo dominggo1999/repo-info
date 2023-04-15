@@ -13,10 +13,12 @@ export const login = ({
 }: {
   email: string;
   password: string;
-}): {
-  success?: boolean;
-  error?: string;
-} => {
+}):
+  | {
+      success?: boolean;
+      error?: string;
+    }
+  | undefined => {
   if (!isClient) return;
 
   if (email === CORRECT_EMAIL && password === CORRECT_PASSWORD) {
@@ -39,12 +41,12 @@ export const login = ({
   }
 };
 
-export const isLogin = () => {
+export const isLogin = (): boolean | undefined => {
   if (!isClient) return;
   return localStorage.getItem("auth") === "true";
 };
 
-export const logout = () => {
+export const logout = (): boolean | undefined => {
   if (!isClient) return;
   localStorage.removeItem("auth");
 };
