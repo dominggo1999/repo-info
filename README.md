@@ -117,7 +117,7 @@ The main technologies and libraries used for developing this application are:
 
 ![e2e test](/screenshots/cypress-e2e.gif)
 
-# Vue JS Version
+# 2.Vue JS Version
 
 ### How to Build and Develop
 
