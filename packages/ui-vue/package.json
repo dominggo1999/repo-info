@@ -15,6 +15,7 @@
     "cy:open": "cypress open --component --browser chrome"
   },
   "dependencies": {
+    "@acme/services": "*",
     "@acme/tailwind-config": "*",
     "@acme/types": "*",
     "@vueuse/core": "^10.0.2",
