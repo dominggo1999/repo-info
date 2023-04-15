@@ -18,6 +18,8 @@
     "@acme/tailwind-config": "*",
     "@acme/types": "*",
     "@vueuse/core": "^10.0.2",
+    "clsx": "^1.2.1",
+    "oh-vue-icons": "1.0.0-rc3",
     "vue": "^3.2.47"
   },
   "devDependencies": {
