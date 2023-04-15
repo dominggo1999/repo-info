@@ -116,3 +116,14 @@ The main technologies and libraries used for developing this application are:
 ### e2e test
 
 ![e2e test](/screenshots/cypress-e2e.gif)
+
+# Vue JS Version
+
+### How to Build and Develop
+
+- Clone this repo
+- Install dependencies: `pnpm install`
+- To develop the UI package: `cd packages/ui-vue && pnpm run dev`
+- To develop the Repository Explorer app: `cd apps/vue && pnpm run dev`
+- To build the UI package: `cd packages/ui-vue && pnpm run build`
+- To build the Repository Explorer app: `cd apps/vue && pnpm run build`
